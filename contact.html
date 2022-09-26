@@ -25,42 +25,57 @@
         <p>I'm open for all of your inquires!</p>
         <br>
     </header>
-   
+
 
     <form action="/Thanks.html" method="POST" name="contact" netlify>
-    <fieldset>
-        <legend>Your information:</legend>
+        <fieldset>
+            <legend>Your information:</legend>
+            <div>
+                <label for="name">Please enter your first name:</label>
+                <br>
+                <input type="text" name="name" required>
+                <br>
+                <label for="name2">Please enter you last name:</label>
+                <br>
+                <input type="text" name="name" required>
+                <br>
+            </div>
+        </fieldset>
         <br>
-        <br>
-        <label for="name">Please enter your name:</label>
-        <br>
-        <input type="text" name="name" required>
-        <br>
-        <br>
-        <label for="email">Please enter your email address:</label>
-        <br>
-        <input type="text" name="email" required>
-        <br>
-        <br>
-        <label for="phone">Please enter you phone number</label>
-        <br>
-        <input type="text" name="phone" optional>
-        <br>
-        <br>
-        <label for="query">Please state what you are inquiring about </label>
-        <br>
-        <select id="query" name="Option">
-            <option value="Career opportunity">Career opportunity</option>
-            <option value="Business proposal">Business proposal</option>
-            <option value="Personal query">Personal query</option>
-            <option value="complaint">Complaint</option>
-            <option value="General query">General query</option>
-        </select>
-        <br>
-        <br>
-        <label for="message">Please enter a message:</label>
-        <br>
-        <textarea id="message" name="message" rows="5" cols="30"></textarea>
+        <fieldset>
+            <legend>Your Contact Information:</legend>
+            <div>
+            <label for="email">Please enter your email address:</label>
+            <br>
+            <input type="text" name="email" required>
+            </div>
+            <div>
+            <label for="phone">Please enter you phone number</label>
+            <br>
+            <input type="text" name="phone" optional>
+            </div>
+        </fieldset>
+         <br>
+         <fieldset>
+            <legend>Inquiry</legend>
+            <label for="query">Please state what you are inquiring about </label>
+            <br>
+            <select id="query" name="Option">
+                <option value="Career opportunity">Career opportunity</option>
+                <option value="Business proposal">Business proposal</option>
+                <option value="Personal query">Personal query</option>
+                <option value="complaint">Complaint</option>
+                <option value="General query">General query</option>
+            </select>
+            <br>
+            <br>
+            <label for="message">Please enter a message:</label>
+            <br>
+            <textarea id="message" name="message" rows="5" cols="30"></textarea>
+        </fieldset>
+        <p>
+            <input type="submit" value="Submit">
+        </p>
     </form>
 </body>
 
